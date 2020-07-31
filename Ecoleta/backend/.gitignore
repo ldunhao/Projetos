@@ -2,3 +2,6 @@
 package-lock.json
 *.lock
 tsconfig.json
+uploads/*
+!uploads/.gitkeep
+*.sqlite

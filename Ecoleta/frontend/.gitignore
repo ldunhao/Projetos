@@ -7,6 +7,8 @@
 
 yarn.lock
 tsconfig.json
+package-lock.json
+.gitignore
 
 # testing
 /coverage
