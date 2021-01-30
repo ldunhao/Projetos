@@ -1,17 +1,9 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import { Router } from 'express';
+
+import appointmentsRouter from './appointments.routes';
 
 const routes = Router();
 
-routes.get('/users', (request, response) => {
-  const { name, email } = request.body;
-
-  const User = {
-    name,
-    email
-  };
-
-  response.json(User)
-});
+routes.use('/appointments', appointmentsRouter);
 
 export default routes;
